@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UG GPA Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>UG GPA Calculator</h1>
+      <p>University of Ghana — Official Grading System</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Enter Your Courses</h2>
+      <div id="courses-list">
+        <!-- Course rows added by JavaScript -->
+      </div>
+      <button class="btn-add" onclick="addCourse()">+ Add Course</button>
+    </div>
+
+    <button class="btn-calculate" onclick="calculateGPA()">
+      Calculate GPA
+    </button>
+
+    <div class="results" id="results" style="display:none;">
+      <h2>Your Results</h2>
+      <div id="course-results"></div>
+      <div class="gpa-box">
+        <p>Your GPA</p>
+        <h1 id="gpa-value">0.00</h1>
+        <p id="degree-class">—</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
